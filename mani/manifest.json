@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Barra Lateral",
+    "version": "1.0",
+    "description": "Muestra una barra lateral al presionar el botón.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "commands": {
+        "toggleSidebar": {
+            "suggested_key": {
+                "default": "Ctrl+B"
+            },
+            "description": "Muestra u oculta la barra lateral"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
