@@ -1,0 +1,466 @@
+
+
+.lading{
+    max-width: 100%;
+    background: linear-gradient(to left, #000000c7,#000000c7,#000000c7),url("https://ideogram.ai/assets/image/lossless/response/2ebDB7u9S36E3IXFpDSnsQ") top;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.derecha{
+    max-width: 100%;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+
+.derecha img{
+    max-width: 100%;
+    width: 800px;
+    height:800px;
+}
+
+.izquierda{
+    max-width: 100%;
+    width: 750px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.izquierda img{
+    max-width: 100%;
+    
+}   
+
+#frase_cel{
+    display: none;
+}
+
+.izquierda img{
+    width: 100%;
+}
+
+.btns{
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 650px;
+}
+
+.btns a:hover > i{
+    transition: 0.5s;
+    transform: translate(0, -20px);
+}
+
+.btns i{
+    transition: 1s;
+    text-align: center;
+    font-size: 2em;
+    width: 60px;
+    line-height: 60px;
+    color: #000;
+    background: #FCD165;
+    border-radius: 1000px;
+}
+
+.btns a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+
+.btns p{
+
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FCD165;
+    display: block;
+}
+
+.como_pedir{  
+    
+    max-width: 100%;
+    background: #FCD165;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-wrap: wrap;    
+}
+
+.divi_{
+    width: 100%;
+}
+
+.divi_ h2{
+    max-width: 90% ;
+    margin: 0 auto;
+    transform: rotate(-2deg);
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    width: 480px;
+    color: #fff;
+    font-size: 1.2em;
+    background: url("../img/Rectangle\ 34\ \(1\).png") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.divi_ h2::before{
+    max-width: 100% ;
+
+    content: "";
+    display: block;
+    left: 50%;
+    bottom: -40px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,0%);
+    position: absolute;
+    background: url("../img/Polygon.png") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.como_pedir .pasos{
+    max-width: 100%;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 0 auto;
+    margin-top: 130px;
+    place-content: center;
+    place-items: center;
+}
+
+.como_pedir .pasos .paso{
+    position: relative;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;    
+    text-align: center;
+    place-content: center;
+    place-items: center;
+}
+
+.como_pedir .pasos .paso img{
+    display: block;
+    position: relative;
+    width: 150px;
+    height:100px;
+}
+
+
+.como_pedir .pasos .paso p{
+    text-align: left;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 50px;
+    color: #000;
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    position: relative;
+}
+
+.paso p::before{
+    z-index: 2;
+    content: "";
+    display: block;
+    background: #fff;
+    left: -40px;
+    top: 12%;
+    transform: rotate(-90deg);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url("../img/Polygon.png") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.zonas{
+    max-width: 100%;
+    background: url("https://www.diverchopp.com/img/fondo-zonas.png") center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-wrap: wrap;   
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.zona p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #FCD165;
+}
+
+.column {
+    width: 400px;
+    margin: 0 20px;
+}
+
+
+.column button{
+    font-weight: 900;   
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #FCD165;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.column button span{
+    font-weight: 900;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 1000px;
+    color: #FCD165;
+    font-size: 1em;
+    border: 2px solid #FCD165;
+}
+
+.infos{
+    margin-top: 80px;
+    display: flex;    
+    flex-wrap: wrap;  
+    place-content: center;
+    place-items: center;
+    flex-wrap: wrap;    
+}
+
+.zona{
+    max-width: 90%;
+    width: 600px;
+}
+
+.mapa{
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.mapa img{
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1100px) {
+    .como_pedir{  
+    
+        max-width: 100%;
+        background: #FCD165;
+        width: 100%;
+        max-height: auto;
+        height: auto;
+        padding-top: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-wrap: wrap;    
+        padding-bottom: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .izquierda{
+        right: 2%;
+    }
+    .derecha {
+        left: 10%;
+    }
+    .derecha img{
+        width: 800px;
+        height:700px;
+    }
+}   
+
+@media screen and (max-width: 1300px) {
+    .izquierda{
+        right: 2%;
+    }
+    .derecha {
+        left: -10%;
+    }
+    .derecha img{
+        width: 800px;
+        height:700px;
+    }
+}   
+
+@media screen and (max-width: 1010px) {
+    .izquierda{
+        margin: 0 auto;
+        position: relative;
+    }
+    .derecha img{
+        display: none;
+    }
+    .como_pedir{  
+    
+        max-width: 100%;
+        background: #FCD165;
+        width: 100%;
+        max-height: auto;
+        height: auto;
+        padding-top: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-wrap: wrap;    
+        padding-bottom: 40px;
+    }
+    .zonas{
+        max-width: 100%;
+        background: url("https://www.diverchopp.com/img/fondo-zonas.png") center ;
+        background-size: cover;
+        width: 100%;
+        height: auto        ;
+        padding-top: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-wrap: wrap;   
+        padding-bottom: 20px;
+    }
+}   
+
+@media screen and (max-width: 800px) {
+    #frase{
+        display: none;
+    }
+    #frase_cel{
+        margin: 0 auto  ;
+        width: 80%;
+        display: block;
+    }
+    .lading{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .como_pedir{  
+    
+        max-width: 100%;
+        background: #FCD165;
+        width: 100%;
+        max-height: auto;
+        height: auto;
+        padding-top: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-wrap: wrap;    
+        padding-bottom: 40px;
+    }
+    .zonas{
+        max-width: 100%;
+        background: url("https://www.diverchopp.com/img/fondo-zonas.png") center ;
+        background-size: cover;
+        width: 100%;
+        height: auto        ;
+        padding-top: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        flex-wrap: wrap;   
+        padding-bottom: 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;        
+        flex-wrap: wrap;   
+    }
+    .mapa img{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .pasos{
+        max-width: 100%;
+        width: 1100px;
+        max-height: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;    
+        margin: 0 auto;
+        margin-top: 130px;
+        place-content: center;
+        place-items: center;
+    }
+
+    .paso{
+        margin-top: 50px;
+    }
+    .como_pedir .pasos .paso p{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        margin-left: none;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 50px;
+        color: #000;
+        font-size: 1.2em;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        position: relative;
+    }
+
+    .paso p::before{
+        z-index: 2;
+        content: "";
+        display: none;
+        background: #fff;
+        left: -40px;
+        top: 12%;
+        transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: url("../img/Polygon.png") center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}   

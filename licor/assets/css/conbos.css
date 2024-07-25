@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+.main{
+    margin-top: 100px;
+}
+
+.mejores .mejores_{
+    color: #dab11f;
+    width: 100%;
+    font-family: "Metal Mania", system-ui;
+    font-size: 2em;
+    font-weight: 1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dab11f;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.mejores{
+    text-align: center;
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mejores .carta{
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    background: #000000;
+}
+
+.mejores .precio{
+    position: absolute;
+    z-index: 1;
+    background: #000000;
+    width: 40px;
+    line-height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.mejores .carta img{
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.mejores .carta .info{
+    text-align: center;
+    width: 300px;
+}
+
+.mejores .carta .info h2{
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.mejores .carta .info i{
+    color: #FFF;
+    font-size: 1.4em;
+}
+
+.mejores .carta .calculo{
+    display: block;
+    margin-top: 5px; 
+    color: #FFF;
+}
+
+
+#precio_trago{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 50px;
+    line-height: 30px;
+    color: #000;
+    background: #fcd165;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.carrito{
+    max-width: 100%;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+    transform: translate(-420px);
+}
+
+
+.carrito.abrierto{
+    transform: translate(0);
+    transition:1s;
+}
+
+.carrito > .close{
+    z-index: 2;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.carrito h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carrito .close::before{
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 35px;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    background: url("../img/Polygon.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+    height: 45px;
+}
+
+.card_cb{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 380px;
+    background: #000;
+    height: auto;
+    display: flex !important;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    place-items: center;
+    text-align: center; 
+}
+
+.card_cb img{
+    max-width: 100%;
+    height: 250px;
+}
+
+.card_cb .img{  
+    margin-left: 10px;  
+    width: 160px;
+    height: 100%;
+}
+.card_cb .info{
+    text-align: center  !important;
+    /* background: #ffff;    */
+    margin-left: 10px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex !important;
+    flex-wrap: wrap;
+    place-items: center !important;
+    padding-bottom: 10px;
+}
+
+.card_cb .info h2{
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.card_cb .info li{
+    /* margin: 0 auto; */
+    text-align: left;
+    font-size: 1em;
+    margin-top: 10px;
+
+}
+
+
+
+
+.card_cb #precio{
+    max-width: 100%;
+    width: 95%;
+    margin-top: 10px;
+    display: block;
+    background: #ff9900;
+    line-height: 30px;
+}
+
+#precio::before{
+    content: "S/.";
+}
+
+
+.card_cb #calificacion{
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    background: rgb(0, 0, 0);
+}
+
+.card_cb #calificacion:hover #calculo{
+    display: block;
+}
+.card_cb #calculo{
+    right: -10px;
+    top: -10px;
+    color: #000;
+    display: none;
+    font-weight: bold;
+    background: #ffc800;
+    position: absolute;
+}
+
+.card_cb #calificacion i{
+    margin: 5px;
+    color: #ffc800;
+    font-size: 1.2em;
+}
+
+.card_cb #comprar{
+    margin-top: 5px;
+    display: block;
+    background: rgb(145, 145, 145);
+    line-height: 30px;
+    width: 95%;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card_cb #calificar{
+    margin-top: 5px;
+    display: none;
+    background: #ffc800;
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calificar_md{
+    display: none;
+    z-index: 12;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+}
+
+.calificar_md i{
+    font-size: 1.5em;
+    color: #ffc800;
+}
+
+.estrellas i.selected {
+    color: #ffc800;
+}
+
+.calificar_md textarea{
+    margin-top: 10px;
+    width: 85%;
+    height: 130px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+}
+
+.calificar_md h2{
+    color: #fff;
+}
+
+.buscador{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.buscador input{
+    font-size: 1em;
+    /* padding: 0.1px; */
+    background: #fff;
+    width: 100%;
+    /* border: none; */
+    height: 25px;
+    outline: none;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.buscador i{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.buscador .cartas_recomendadas{
+    margin: 0 auto;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    background: #000;
+    height: 250px;
+    overflow: auto;
+}
+
+
+.option_remd p{
+    width: 180px;
+    /* height: 100%; */
+}
+
+.option_remd img{
+    width: 70px;
+    height: 100%;
+}
+
+.buscador img{
+    max-width: 100%;
+}
+
+.filtro-shar{
+    display: none !important;
+}
+.buscador .option_remd{
+    /* border: 1px solid #fff; */
+    cursor: pointer;
+    /* text-align: center; */
+    background: #000;
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    margin: 0 auto;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+
+#carita{
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+#reaccion{
+    color: #fff;
+}
+
+#close_calificar_md{
+    right: 5px;
+    top: 1px;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    .mejores{
+        max-width: 98%;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .mejores .carta{
+        text-align: center;
+        max-width: 90%;
+        margin: 10px;
+        position: relative;
+        border-radius: 10px;
+        padding: 0px;
+        display: block;
+        width: 400px; 
+        padding-bottom: 10px;
+        height: auto;
+        background: #dab11f;
+    }
+    
+    .mejores .carta img{
+        max-width: 100%;
+        width: 200px;
+        height: 300px;
+    }
+    
+    .mejores .carta .info{
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .mejores .carta .info h2{
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        color: #000;
+        margin-bottom: 5px;
+    }
+    
+    .mejores .carta .info i{
+        color: #000;
+        font-size: 1.4em;
+    }
+    
+    .mejores .carta .calculo{
+        display: block;
+        margin-top: 5px; 
+        color: #000;
+    }
+}

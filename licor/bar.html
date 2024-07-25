@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assent/css/font-awesome.css">
+    <link rel="stylesheet" href="./assent/css/fontawesome-all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/animaciones.css">
+    <link rel="stylesheet" href="./assets/css/silders.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:url" content="https://firebasestorage.googleapis.com/v0/b/fotos-b8a54.appspot.com/o/Joseph%20Anthony%20Laucata%20Zu%C3%B1iga%2F12%20(5)%20(2).png?alt=media&token=bda8625e-434c-4681-9b35-9b2d1a227035">
+    <meta property="og:title" content="Daddy Liquors">
+    <meta property="og:description" content="Express">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/fotos-b8a54.appspot.com/o/Joseph%20Anthony%20Laucata%20Zu%C3%B1iga%2F12%20(5)%20(2).png?alt=media&token=bda8625e-434c-4681-9b35-9b2d1a227035">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <img src="./assets/img/Desktop.png" alt="logo" style="display: none;">
+    <!-- <audio src="./assets/audio/aga.wav" id="aga"></audio> -->
+    <!-- <audio src="./assets/audio/ALEMAN.wav" autoplay></audio> -->
+    <div class="recarga" id="recarga" style="display: none;">
+        <div class="loader">
+            <div class="circle"></div>
+            <img src="./assets/img/log.webp" alt="">
+          </div>
+        <div class="parte1"></div>
+        <div class="parte2"></div>
+    </div>
+
+    <div class="recuerdo" id="recuerdo"  style="display: none;">
+        <div class="centro">
+            <div class="lado_">
+                <img src="./assets/img/logo.webp" alt="">
+            </div>
+            <div class="lado">
+                <h2>BIENVENIDO <span id="nombre_saludo"></span></h2>
+                <p>PARA CONTINUAR DEBES SER MAYOR DE 18 AÑOS</p>
+                <div class="btn">
+                    <button>NO SOY MAYOR DE 18 AÑOS</button>
+                    <button id="si">SOY MAYOR DE 18 AÑOS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="">
+            <div class="logo">
+                <div class="rotado"></div>
+                <img src="./assets/img/Group_15__1_-removebg-preview.png" alt="">
+            </div>
+        </a>
+        <div class="contacto">
+            <p>COMBO</p>
+            <span>Tu Licoreria Deliveri</span>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61561152465448" target="_blank"><i class='bx bxl-facebook me500_'></i></a>
+            <a href=""><i class='bx bxl-instagram me500_' ></i></a>
+            <i class='bx bxs-user login_md' id="user_i"></i>
+            <img id="user_im" src="" alt="">
+            <i id="abrir_nv" class="fa fa-bars"></i>
+            <!-- <i id="close_nv" class="fa fa-times"></i> -->
+        </div>
+    </header>
+
+    <div id="navegador" class="navegador">
+        <span class="close" id="close_nv"><i class="fa fa-times"></i></span>
+        <div class="centro">
+            <a href="./index.html">
+                <i class="fa fa-home"></i>
+                <p>INICIO</p>
+            </a>
+            <a>
+                <i class="fa fa-wine-glass"></i>
+                <p>BAR-ONLINE</p>
+            </a>
+            <a>
+                <i class="fa fa-question"></i>
+                <p>¿COMO PEDIR?</p>
+            </a>
+            <a>
+                <i class="fa fa-map-marker"></i>
+                <p>ZONAS</p>
+            </a>
+            <a>
+                <i class="fa fa-phone"></i>
+                <p>CONTACTOS</p>
+            </a> 
+            <a class="me500">
+                <i class="bx bxl-facebook"></i>
+                <p>FACEBOOK</p>
+            </a> 
+            <a class="me500">
+                <i class="bx bxl-instagram"></i>
+                <p>INSTAGRAM</p>
+            </a> 
+        </div>
+    </div>
+
+    <div class="lading">
+        <h2 class="logo_">Daddy Liquors</h2>
+        <div class="slider" id="diapositivas">
+            <!-- <div class="slide" id="slide1" >
+                <div class="persona">
+                    <img id="frase" src="./assets/img/PC.svg" alt="">
+                    <img id="frase_cel" src="./assets/img/Celular.svg" alt="">
+                    <img id="persona" src="./assets/img/1_f3bdb0f9-dee6-4e19-94df-aa4a99712d9f-removebg-preview.png" alt="">
+                </div>
+
+                <img class="fondo" src="https://lic/oreriasunidas.pe/cdn/shop/files/Banner_desktop_-_Coleccion_JD.jpg?v=1700164157&width=2000" alt="Image 1">
+            </div> -->
+            <div class="slide">
+                <div class="bebidas">
+                    <div class="img_bebida">
+                        <span class="re">Nuevo</span>
+                        <img src="./assets/img/bebidas/1.webp" alt="">
+                    </div>
+                    <div class="info_bebida">
+                        <div class="info">
+                            <h2>PACK SOMETHING SPECIAL</h2>
+                            <li>1 Botella de Something Especial</li>
+                            <li>1 Bolsa de Hielo de 2kgs</li>
+                            <button><i class="fa fa-card-id"></i> Pedir</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img class="fondo" src="https://licoreriasunidas.pe/cdn/shop/files/Banner_desktop_-_Coleccion_JW.jpg?v=1700163216&width=2000" alt="Image 1"> -->
+            </div>
+            <div class="slide">
+                <div class="bebidas">
+                    <div class="img_bebida">
+                        <img src="./assets/img/bebidas/1.webp" alt="">
+                    </div>
+                    <div class="info_bebida">
+                        <div class="info">
+                            <h2>PACK SOMETHING SPECIAL</h2>
+                            <li>1 Botella de Something Especial</li>
+                            <li>1 Bolsa de Hielo de 2kgs</li>
+                            <button><i class="fa fa-card-id"></i> Pedir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="bebidas">
+                    <div class="img_bebida">
+                        <img src="./assets/img/bebidas/1.webp" alt="">
+                    </div>
+                    <div class="info_bebida">
+                        <div class="info">
+                            <h2>PACK SOMETHING SPECIAL</h2>
+                            <li>1 Botella de Something Especial</li>
+                            <li>1 Bolsa de Hielo de 2kgs</li>
+                            <button><i class="fa fa-card-id"></i> Pedir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controladores">
+                <span class="prev"><i class="fa fa-arrow-left"></i></span>
+                <span class="next"><i class="fa fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- <div class="divi">
+            <img id="divi" src="./assets/img/4.svg" alt="">
+            <h1>OFRECEMOS</h1>
+            <img id="divi" src="./assets/img/4.svg" alt="">
+        </div> -->
+        <div class="bttt">
+            <h2 class="" id="">BIENVENIDOS A NUESTRO BAR ONLINE</h2>
+            <p>Solicita el trago que deseas disfrutar, nosotros lo llevamos a tu <a href="">ZONA PEDIDOS</a></p>
+        </div>
+        <div class="cartas">
+            <a class="centro">
+                <a href="./combos.html" class="carta">
+                    <img src="https://ideogram.ai/assets/image/lossless/response/GVw7Tm20QpCcN7Phe8i3_g" alt="">
+                    <div class="btn">
+                        <button>COMBAZO <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./cerveza.html" class="carta">
+                    <img src="./assets/img/bebidas/cerveza.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">CERVEZA</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./vinos.html" class="carta">
+                    <img src="./assets/img/bebidas/vinos.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">VINOS</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./complementos.html" class="carta">
+                    <img src="./assets/img/bebidas/complementos.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">COMPLEMENTOS</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./espumates.html" class="carta">
+                    <img src="./assets/img/bebidas/espumante.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">ESPUMANTES</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./cigarros.html" class="carta">
+                    <img src="./assets/img/bebidas/cigarro.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">CIGARROS</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+                <a href="./snacks.html" class="carta">
+                    <img src="./assets/img/bebidas/piqueos.webp" alt="">
+                    <div class="btn">
+                        <button><span class="nombre">SNACKS</span> <i class='bx bxs-right-arrow box'></i></button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <span class="whatsapp" id="whatsapp">
+        <img src="./assets/img/icons8-whatsapp.svg" alt="">
+    </span>
+    <div class="whatsapp_bri" id="whatsapp_bri">
+        <div class="superior">
+            <img src="./assets/img/icons8-whatsapp.svg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt culpa</p>
+        </div>
+        <div class="inferior">
+            <a href="" class="btn">Contactanos</a>
+        </div>
+    </div>
+    <script>
+        const animations = [
+    // "adentroparaafuera",
+    // "arribaabajo",
+    // "abajoarriba",
+    // "afueraparaadentro",
+    "delado",
+    "deladoinvertido",
+];
+    </script>
+    <script src="./assets/js/sildee.js"></script>
+    <script src="./assets/js/onclick.js"></script>
+    <script src="./assets/js/estra_local.js"></script>
+</body>
+</html>
